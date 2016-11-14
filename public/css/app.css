@@ -21,6 +21,11 @@ code { /* overwrite foundation default-styles */
 	border-color: blue; */
 }
 
+.tool-short-description {
+	min-height: 100px;
+	max-height: 100px;
+}
+
 .tool-img {
 	max-width: 300px;
 }
