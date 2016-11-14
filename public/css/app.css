@@ -1,6 +1,11 @@
 body {
 /*	background-color: #eaeaea; */
 }
+code { /* overwrite foundation default-styles */
+	background-color: inherit;
+	border: none;
+	padding: 0px;
+}
 .intro-banner {
 	height: 300px;
 }
