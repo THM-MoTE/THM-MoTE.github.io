@@ -6,16 +6,22 @@ landing:
     items:
       - name: 'MoVE'
         image: 'public/img/move-v0.5.png'
-        description: 'Todo description'
+        description: >
+          A graphical editor for Modelica’s icon annotation. Create your icons using an
+          Inscape-inspired UI.
         moreurl: 'projects/move'
         downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.0/Move-0.7.0.jar'
         githuburl: 'MoVE'
       - name: 'MoDE'
-        description: 'Todo description'
+        description: >
+          A graphical editor for Modelica’s diagram annotation. Create your diagrams using an
+          Inscape-inspired UI.
         moreurl: 'https://github.com/THM-MoTE/MoDE'
         githuburl: 'MoDE'
         downloadurl: 'https://github.com/THM-MoTE/MoDE'
       - name: 'MoPE'
-        description: 'Todo description'
-        moreurl: '#'
+        description: >
+          The missing integrated development environment for Modelica. Use your favourite
+          text editor for developing Modelica.
+        moreurl: 'projects/mope'
         downloadurl: '#'
