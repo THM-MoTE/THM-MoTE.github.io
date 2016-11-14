@@ -1,0 +1,19 @@
+landing:
+  headline: 'Modelica Tool Ensemble (MoTE)'
+  projects:
+    headline: 'Projects'
+    intro: 'Applications for working with Modelica.'
+    items:
+      - name: 'MoVE'
+        image: 'public/img/move-v0.5.png'
+        description: 'Todo description'
+        moreurl: 'github.com'
+        downloadurl: 'github.com'
+      - name: 'MoDE'
+        description: 'Todo description'
+        moreurl: 'https://github.com/THM-MoTE/MoDE'
+        downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.0/Move-0.7.0.jar'
+      - name: 'MoPE'
+        description: 'Todo description'
+        moreurl: 'https://github.com/THM-MoTE/MoDE'
+        downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.0/Move-0.7.0.jar'
