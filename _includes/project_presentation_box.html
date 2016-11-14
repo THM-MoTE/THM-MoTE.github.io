@@ -1,6 +1,15 @@
 <div class="small-3 columns tool-info-box">
     <div class="row column">
-      <img src="{{ include.image }}" class="float-center tool-img"/>
+      {% if include.image.size > 0 %}
+        <img src="{{ include.image }}" class="float-center tool-img"/>
+      {% else %}
+        <div class="missing-project-img">
+          <div class="centered">
+            No image for {{ include.name }} available.
+          </div>
+        </div>
+      {% endif %}
+
     </div>
     <div class="row column">
       <h4 class="text-center">{{ include.name }}</h4>
