@@ -1,0 +1,17 @@
+---
+layout: single
+title: Modelica Vector graphics Editor (MoVE)
+date:   2016-11-14 09:15:41 +0100
+permalink: projects/move
+---
+
+.. is a modern, platform-independent application for creating your graphical representation of
+a Modelica Model.
+
+## Installation
+In order to install MoVE just
+https://github.com/THM-MoTE/MoVE/releases[crap the jar] and run it using:
+[source, sh]
+----
+  $ java -jar move.jar &
+----
