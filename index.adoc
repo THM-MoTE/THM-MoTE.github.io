@@ -1,9 +1,0 @@
----
-layout: landing
-title: ''
-date:   2016-11-14 09:15:41 +0100
----
-
-MoTE is a set of small tools/applications for developing Modelica. The tools are designed to
-work independent from each other.
-This make it possible for users to only need the tools they are really use.
