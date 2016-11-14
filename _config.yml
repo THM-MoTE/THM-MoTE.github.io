@@ -23,10 +23,20 @@ url: "https://thm-mote.github.io" # the base hostname & protocol for your site, 
 github_user: 'thm-mote'
 permalink: pretty
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+# highlighter: rouge
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+
+asciidoctor:
+ attributes:
+   source-highlighter: pygments
+   pygments-stylesheet: 'public/css/syntax.css'
+
 theme: minima
 gems:
-#  - jekyll-feed
+   - jekyll-asciidoc
 exclude:
   - Gemfile
   - Gemfile.lock

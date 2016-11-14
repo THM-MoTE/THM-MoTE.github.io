@@ -18,7 +18,7 @@
     </div>
     <div class="row column">
       <div class="expanded button-group">
-        <a href="{{ include.moreurl }}" class="button fi-magnifying-glass">&nbsp;&nbsp;&nbsp;More</a>
+        <a href="{{ include.moreurl | absolute_url }}" class="button fi-magnifying-glass">&nbsp;&nbsp;&nbsp;More</a>
         <a href="{{ include.downloadurl }}" class="button fi-download">&nbsp;&nbsp;&nbsp;Download</a>
         {% if include.githuburl.size > 0 %}
           <a href="{{ include.githuburl }}" class="button fi-social-github">&nbsp;&nbsp;&nbsp;Source</a>
