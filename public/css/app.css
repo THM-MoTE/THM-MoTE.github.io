@@ -1,0 +1,46 @@
+body {
+/*	background-color: #eaeaea; */
+}
+code { /* overwrite foundation default-styles */
+	background-color: inherit;
+	border: none;
+	padding: 0px;
+}
+.intro-banner {
+	height: 300px;
+}
+.text-center {
+	text-align: center;
+}
+.custom-menu-icon {
+	font-size: 18pt;
+}
+
+.tool-info-box {
+/*	border-style: solid;
+	border-color: blue; */
+}
+
+.tool-short-description {
+	min-height: 100px;
+	max-height: 100px;
+}
+
+.tool-img {
+	max-width: 300px;
+}
+.missing-project-img {
+	width: 300px;
+	height: 200px;
+	margin-bottom: 10px;
+	background-color: rgb(33, 153, 232);
+	color: #fefefe;
+}
+.missing-project-img .centered {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 14pt;
+	vertical-align: middle;
+	line-height: 210px;
+}
