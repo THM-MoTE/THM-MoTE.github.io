@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include html_head.html %}
+</head>
+<body>
+  {% include head_nav.html %}
+  <div class="row column"> <!-- main content -->
+    <h1 class="text-center">{{ page.title }}</h2>
+    {{ content }}
+  </div> <!-- /main content -->
+  {% include scripts.html %}
+</body>
+</html>
