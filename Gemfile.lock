@@ -55,7 +55,6 @@ DEPENDENCIES
   jekyll-asciidoc
   minima (~> 2.0)
   pygments.rb
-  rouge
 
 RUBY VERSION
    ruby 2.0.0p648
