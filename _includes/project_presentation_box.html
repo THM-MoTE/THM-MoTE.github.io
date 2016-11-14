@@ -21,7 +21,7 @@
         <a href="{{ include.moreurl | absolute_url }}" class="button fi-magnifying-glass">&nbsp;&nbsp;&nbsp;More</a>
         <a href="{{ include.downloadurl }}" class="button fi-download">&nbsp;&nbsp;&nbsp;Download</a>
         {% if include.githuburl.size > 0 %}
-          <a href="{{ include.githuburl }}" class="button fi-social-github">&nbsp;&nbsp;&nbsp;Source</a>
+          <a href="{{ "https://github.com/" | append: site.github_user | append: "/" | append: include.githuburl }}" class="button fi-social-github">&nbsp;&nbsp;&nbsp;Source</a>
         {% endif %}
       </div>
     </div>
