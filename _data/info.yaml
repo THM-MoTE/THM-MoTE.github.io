@@ -20,6 +20,7 @@ landing:
         githuburl: 'MoDE'
         downloadurl: 'https://github.com/THM-MoTE/MoDE'
       - name: 'MoPE'
+        image: 'public/img/mope-v0.6.png'
         description: >
           The missing integrated development environment for Modelica. Use your favourite
           text editor for developing Modelica.
