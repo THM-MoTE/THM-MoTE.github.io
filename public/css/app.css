@@ -17,8 +17,8 @@ code { /* overwrite foundation default-styles */
 }
 
 .tool-info-box {
-/*	border-style: solid;
-	border-color: blue; */
+	box-shadow: 5px 5px 10px rgba(128,128,128,0.53);
+	padding-top: 10px;
 }
 
 .tool-short-description {
