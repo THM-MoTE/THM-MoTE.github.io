@@ -1,7 +1,7 @@
 <div class="small-3 columns tool-info-box">
     <div class="row column img-div">
       {% if include.image.size > 0 %}
-        <img src="{{ include.image }}" class="float-center tool-img"/>
+        <img src="{{ include.image }}" class="float-center tool-img" data-open="img-modal-{{ include.name }}"/>
       {% else %}
         <div class="missing-project-img">
           <div class="centered">
@@ -26,3 +26,12 @@
       </div>
     </div>
   </div>
+
+{% if include.image.size > 0 %}
+<div class="small reveal" id="img-modal-{{ include.name }}" data-reveal>
+  <img src="{{ include.image }}" class="float-center" data-open="img-modal"/>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endif %}
