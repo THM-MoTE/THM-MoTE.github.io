@@ -3,6 +3,11 @@
 mirror=~/Downloads/tmp-mirror
 startDir=$(pwd)
 
+if [ -d "$mirror" ]; then
+  echo "The tmp-mirror ("$mirror") exists; exiting. Remove/Rename this directory if you like to continue!"
+  exit
+fi
+
 # create static site
 bundle exec jekyll build
 
@@ -18,3 +23,6 @@ cp -R $startDir/_site/* $mirror
 git add .
 git commit -m "update content"
 git push origin master
+#kill tmpdir
+cd ..
+rm -rf $mirror
