@@ -37,7 +37,6 @@ code { /* overwrite foundation default-styles */
 	color: #fefefe;
 }
 .tool-info-box .img-div {
-	width: 400px;
 	height: 230px;
 }
 .missing-project-img {
