@@ -17,8 +17,8 @@ code { /* overwrite foundation default-styles */
 }
 
 .tool-info-box {
-/*	border-style: solid;
-	border-color: blue; */
+	box-shadow: 5px 5px 10px rgba(128,128,128,0.53);
+	padding-top: 10px;
 }
 
 .tool-short-description {
@@ -36,11 +36,22 @@ code { /* overwrite foundation default-styles */
 	background-color: rgb(33, 153, 232);
 	color: #fefefe;
 }
+.tool-info-box .img-div {
+	width: 400px;
+	height: 230px;
+}
+.missing-project-img {
+	margin: auto;
+	opacity: 0.7;
+}
 .missing-project-img .centered {
 	width: 100%;
-	margin: auto;
 	text-align: center;
 	font-size: 14pt;
 	vertical-align: middle;
 	line-height: 210px;
+}
+
+.tool-img:fullscreen, .tool-img:-moz-full-screen, .tool-img:-webkit-fullscreen {
+	max-width: 100%;
 }
