@@ -33,6 +33,7 @@ asciidoctor:
  attributes:
    source-highlighter: pygments
    pygments-stylesheet: 'public/css/syntax.css'
+   imagesdir: /public/img
 
 theme: minima
 gems:
