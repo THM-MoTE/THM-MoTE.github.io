@@ -18,7 +18,7 @@ MoVE contains some features that are unique and missing in similar projects:
 - [x] create **straight lines**, **circles** and **squares** by holding down the shift key
 - [x] rotate the shapes
 - [x] import existing models
-- [x] import images and embed them either base64 encoded or
+- [x] import images and embed them either base64 encoded or as url
 - [x] export your icons as **svg** or **png**
 - [x] group and ungroup shapes
 
@@ -84,7 +84,7 @@ command in your terminal:
   $ java -jar Move-0.7.0.jar &
 
 === Install from source
-For installing from source follow this steps:
+For installing from source follow these steps:
 
 - install a http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK version >= 1.8.0_77]
 - install http://www.scala-sbt.org/[sbt]
@@ -94,7 +94,7 @@ For installing from source follow this steps:
 == License
 (C) 2016 Nicola Justus.
 
-MoVE is is distributed under the terms of the
+MoVE is distributed under the terms of the
 https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0].
 See
 https://github.com/THM-MoTE/MoVE/blob/master/LICENSE[LICENSE]
