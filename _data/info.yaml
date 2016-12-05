@@ -26,3 +26,15 @@ landing:
           text editor for developing Modelica.
         moreurl: 'projects/mope'
         downloadurl: '#'
+  libs:
+    headline: 'Libraries'
+    intro: 'Our libraries for working with Java, Scala & Modelica'
+    items:
+      - name: 'omc-java-api'
+        description: Our implementation of the OpenModelica CORBA interface in Java.
+        moreurl: '#'
+        githuburl: 'omc-java-api'
+      - name: 'EnhancedWatchService'
+        description: A wrapper for Java's WatchService API that simplifies the WatchService.
+        moreurl: '#'
+        githuburl: 'EnhancedWatchService'
