@@ -4,6 +4,15 @@ title: ''
 date:   2016-11-14 09:15:41 +0100
 ---
 
-MoTE is a set of small tools/applications for developing Modelica. The tools are designed to
-work independent from each other.
-This make it possible for users to only need the tools they are really use.
+MoTE is a set of small tools/applications for developing Modelica.
+The tools are open-source and designed in terms of the first part of the Unix
+philosophy which states that a program should *do one thing and do it well*.
+Currently MoTE provides applications for developing Modelica (_MoPE_),
+for designing the graphical representation of a Modelica model
+(_MoVE_), and for creating connections between Modelica models (_MoDE_).
+
+The long term goal of MoTE is to provide an alternative development suite for
+Modelica which is _easy to use and extent_. The tools should be easy to use for
+seasoned developers as well as newcomers. Futhermore they should be suitable
+for _easy teaching_ Modelica at universities.
+We invite everyone to participate in our projects. Every help is appreciated.
