@@ -30,7 +30,7 @@ Start the server by typing
 and configure the `~/.mope/mope.conf` file as follows:
 
 * Define which compiler to use in the `compiler` key. Currently we are supporting
-  OpenModelica (`om`) as well as JModelica (`jm`).
+  OpenModelica (`omc`) as well as JModelica (`jm`).
 * Define the path to the compiler in the `compilerExecutable` key. If you want to
   use OpenModelica insert the path to the `omc` executable. If you want to use
   JModelica insert the path to the `IPython script` of JModelica. This script is
@@ -55,7 +55,7 @@ compiler = omc
 compilerExecutable = "/usr/bin/omc"
 ----
 
-Restart the service process and configure the Atom plugin in it's settings menu.
+Continue with configuring the Atom plugin in it's settings menu.
 The settings menu is available through menu:Atom[Preferences > Packages > {mope}].
 
 .Settings menu of the Atom Plugin
