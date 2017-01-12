@@ -9,7 +9,23 @@ permalink: projects/mope
 The missing integrated development environment for Modelica. Use your favourite
 text editor for developing Modelica. {mope} integrates code completion, semantic
 error highlighting, go to declaration and go to documentation into various
-text editors.
+text editors. Furthermore it enables you to check your models for complexity and
+executing your Modelica script files.
+
+////
+== Features
+=== Code Completion
+{mope} enables code completion through the
+https://github.com/atom/autocomplete-plus[autocomplete+] package.
+This package enables auto completion on the fly while typing or by pressing
+kbd:[Ctrl + Space].
+
+=== Go to Declaration
+You can go to a declaration of a model by holding down kbd:[Ctrl] when
+clicking on the model.
+
+=== Go to Documentation
+////
 
 == Installation
 In order to install and configure {mope}, several steps are needed.
