@@ -17,6 +17,9 @@ First download the
 https://github.com/THM-MoTE/mope-server/releases/download/v0.6/mope-server-0.6.jar[server jar]
 and install the https://atom.io/packages/mope[Atom plugin].
 
+.Installing the Atom plugin
+image::mope/atom-plugin.png[Atom plugin Installation, 700]
+
 === Configuration
 Start the server by typing
 [source]
