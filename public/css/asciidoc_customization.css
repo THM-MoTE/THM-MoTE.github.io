@@ -1,0 +1,9 @@
+div.title {
+	color: #7a2518;
+	font-size: 12pt;
+	font-style: italic;
+}
+div.imageblock {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://thm-mote.github.io//public/icons/foundation-icons.css">
 <link rel="stylesheet" href="https://thm-mote.github.io//public/css/app.css">
 <link rel="stylesheet" href="https://thm-mote.github.io//public/css/syntax.css">
+<link rel="stylesheet" href="https://thm-mote.github.io//public/css/asciidoc_customization.css">
 
 </head>
 <body>
@@ -25,7 +26,100 @@
 <p>The missing integrated development environment for Modelica. Use your favourite
 text editor for developing Modelica. MoPE integrates code completion, semantic
 error highlighting, go to declaration and go to documentation into various
-text editors.</p>
+text editors. Furthermore it enables you to check your models for complexity and
+executing your Modelica script files.</p>
+</div>
+<div class="sect1">
+<h2 id="installation">Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to install and configure MoPE, several steps are needed.
+First download the
+<a href="https://github.com/THM-MoTE/mope-server/releases/download/v0.6/mope-server-0.6.jar">server jar</a>
+and install the <a href="https://atom.io/packages/mope">Atom plugin</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/public/img/mope/atom-plugin.png" alt="Atom plugin Installation" width="700">
+</div>
+<div class="title">Figure 1. Installing the Atom plugin</div>
+</div>
+<div class="sect2">
+<h3 id="configuration">Configuration</h3>
+<div class="paragraph">
+<p>Start the server by typing</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>  $ java -jar mope-server-0.6.jar</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and configure the <code>~/.mope/mope.conf</code> file as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Define which compiler to use in the <code>compiler</code> key. Currently we are supporting
+OpenModelica (<code>omc</code>) as well as JModelica (<code>jm</code>).</p>
+</li>
+<li>
+<p>Define the path to the compiler in the <code>compilerExecutable</code> key. If you want to
+use OpenModelica insert the path to the <code>omc</code> executable. If you want to use
+JModelica insert the path to the <code>IPython script</code> of JModelica. This script is
+usually located in the home directory of JModelica.</p>
+</li>
+<li>
+<p>Additionally you can modify the port number which is used by the service process
+with the <code>http.port</code> key.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">A <em>mope.conf</em> example for the server</div>
+<div class="content">
+<pre class="pygments highlight"><code>http.interface = localhost
+http.port = 9001
+
+#which compiler to use?
+#Currently we are supporting OpenModelica (omc) and JModelica (jm)
+compiler = omc
+
+#where is the compiler?
+#Either the OpenModelica compiler-executable called "omc" or
+#the "IPython script" delivered from JModelica, which should be located at:
+#${JMODELICA_HOME}/IPython
+compilerExecutable = "/usr/bin/omc"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Continue with configuring the Atom plugin in it&#8217;s settings menu.
+The settings menu is available through <span class="menuseq"><span class="menu">Atom</span>&#160;&#9656; <span class="submenu">Preferences</span>&#160;&#9656; <span class="submenu">Packages</span>&#160;&#9656; <span class="menuitem">MoPE</span></span>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/public/img/mope/settings-menu.png" alt="Atom Settings Menu" width="600">
+</div>
+<div class="title">Figure 2. Settings menu of the Atom Plugin</div>
+</div>
+<div class="paragraph">
+<p>Make sure that the <em>Interface</em> and <em>Port</em> settings are matching <code>http.interface</code> and <code>http.port</code>
+in the server configuration file <code>~/.mope/mope.conf</code>. Also define the full path to a
+java executable in <code>Java Exec</code> and the path to the server jar in <code>Mope Exec</code>.
+Finally enable <code>Start Server</code>.</p>
+</div>
+<div class="paragraph">
+<p>Now open up a directory in Atom which contains your Modelica project and start
+using MoPE by typing <code>Mope: Connect</code> into the Command Palette.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/public/img/mope/connect-cmd.png" alt="Atom Mope: Connect" width="700">
+</div>
+<div class="title">Figure 3. Connecting Atom to the server</div>
+</div>
+</div>
+</div>
 </div>
   </div> <!-- /main content -->
   <script src="https://thm-mote.github.io//public/js/vendor/jquery.js"></script>
