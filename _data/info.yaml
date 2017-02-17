@@ -10,7 +10,7 @@ landing:
           A graphical editor for Modelica’s icon annotation. Create your icons using an
           Inscape-inspired UI.
         moreurl: 'projects/move'
-        downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.0/Move-0.7.0.jar'
+        downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.1/Move-0.7.1.jar'
         githuburl: 'MoVE'
       - name: 'MoDE'
         description: >
@@ -34,6 +34,10 @@ landing:
         description: Our implementation of the OpenModelica CORBA interface in Java.
         moreurl: '#'
         githuburl: 'omc-java-api'
+      - name: 'recently'
+        description: A library for managing recently used files/folders in Scala.
+        moreurl: '#'
+        githuburl: 'recently'
       - name: 'EnhancedWatchService'
         description: A wrapper for Java's WatchService API that simplifies the WatchService.
         moreurl: '#'
