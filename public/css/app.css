@@ -2,9 +2,10 @@ body {
 /*	background-color: #eaeaea; */
 }
 code { /* overwrite foundation default-styles */
-	background-color: inherit;
+	background-color: #cdccce4d;
 	border: none;
-	padding: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 .intro-banner {
 	height: 300px;

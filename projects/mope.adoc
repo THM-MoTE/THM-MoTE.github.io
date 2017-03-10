@@ -4,8 +4,86 @@ title: Modelica | Editor (MoPE)
 date:   2016-11-14 09:15:41 +0100
 permalink: projects/mope
 ---
-
+:experimental:
+:mope: MoPE
 The missing integrated development environment for Modelica. Use your favourite
-text editor for developing Modelica. MoPE integrates code completion, semantic
+text editor for developing Modelica. {mope} integrates code completion, semantic
 error highlighting, go to declaration and go to documentation into various
-text editors.
+text editors. Furthermore it enables you to check your models for complexity and
+executing your Modelica script files.
+
+////
+== Features
+=== Code Completion
+{mope} enables code completion through the
+https://github.com/atom/autocomplete-plus[autocomplete+] package.
+This package enables auto completion on the fly while typing or by pressing
+kbd:[Ctrl + Space].
+
+=== Go to Declaration
+You can go to a declaration of a model by holding down kbd:[Ctrl] when
+clicking on the model.
+
+=== Go to Documentation
+////
+
+== Installation
+In order to install and configure {mope}, several steps are needed.
+First download the
+https://github.com/THM-MoTE/mope-server/releases/download/v0.6/mope-server-0.6.jar[server jar]
+and install the https://atom.io/packages/mope[Atom plugin].
+
+.Installing the Atom plugin
+image::mope/atom-plugin.png[Atom plugin Installation, 700]
+
+=== Configuration
+Start the server by typing
+[source]
+----
+  $ java -jar mope-server-0.6.jar
+----
+
+and configure the `~/.mope/mope.conf` file as follows:
+
+* Define which compiler to use in the `compiler` key. Currently we are supporting
+  OpenModelica (`omc`) as well as JModelica (`jm`).
+* Define the path to the compiler in the `compilerExecutable` key. If you want to
+  use OpenModelica insert the path to the `omc` executable. If you want to use
+  JModelica insert the path to the `IPython script` of JModelica. This script is
+  usually located in the home directory of JModelica.
+* Additionally you can modify the port number which is used by the service process
+  with the `http.port` key.
+
+[source]
+.A _mope.conf_ example for the server
+----
+http.interface = localhost
+http.port = 9001
+
+#which compiler to use?
+#Currently we are supporting OpenModelica (omc) and JModelica (jm)
+compiler = omc
+
+#where is the compiler?
+#Either the OpenModelica compiler-executable called "omc" or
+#the "IPython script" delivered from JModelica, which should be located at:
+#${JMODELICA_HOME}/IPython
+compilerExecutable = "/usr/bin/omc"
+----
+
+Continue with configuring the Atom plugin in it's settings menu.
+The settings menu is available through menu:Atom[Preferences > Packages > {mope}].
+
+.Settings menu of the Atom Plugin
+image::mope/settings-menu.png[Atom Settings Menu, 600]
+
+Make sure that the __Interface__ and __Port__ settings are matching `http.interface` and `http.port`
+in the server configuration file `~/.mope/mope.conf`. Also define the full path to a
+java executable in `Java Exec` and the path to the server jar in `Mope Exec`.
+Finally enable `Start Server`.
+
+Now open up a directory in Atom which contains your Modelica project and start
+using {mope} by typing `Mope: Connect` into the Command Palette.
+
+.Connecting Atom to the server
+image::mope/connect-cmd.png[Atom Mope: Connect, 700]
