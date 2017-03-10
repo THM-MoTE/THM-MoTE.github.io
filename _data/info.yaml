@@ -32,13 +32,10 @@ landing:
     items:
       - name: 'omc-java-api'
         description: Our implementation of the OpenModelica CORBA interface in Java.
-        moreurl: '#'
         githuburl: 'omc-java-api'
       - name: 'recently'
         description: A library for managing recently used files/folders in Scala.
-        moreurl: '#'
         githuburl: 'recently'
       - name: 'EnhancedWatchService'
         description: A wrapper for Java's WatchService API that simplifies the WatchService.
-        moreurl: '#'
         githuburl: 'EnhancedWatchService'
