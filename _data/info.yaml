@@ -18,14 +18,15 @@ landing:
           Inscape-inspired UI.
         moreurl: 'https://github.com/THM-MoTE/MoDE'
         githuburl: 'MoDE'
-        downloadurl: 'https://github.com/THM-MoTE/MoDE'
+        downloadurl: 'https://github.com/THM-MoTE/MoDE/releases'
       - name: 'MoPE'
         image: 'public/img/mope-v0.6.png'
         description: >
           The missing integrated development environment for Modelica. Use your favourite
           text editor for developing Modelica.
         moreurl: 'projects/mope'
-        downloadurl: '#'
+        githuburl: 'mope-server'
+        downloadurl: 'https://github.com/THM-MoTE/mope-server/releases/download/v0.6.2/mope-server-0.6.2.jar'
   libs:
     headline: 'Libraries'
     intro: 'Our libraries for working with Java, Scala & Modelica'
