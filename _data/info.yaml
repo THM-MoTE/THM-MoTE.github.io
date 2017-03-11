@@ -8,14 +8,14 @@ landing:
         image: 'public/img/move-v0.5.png'
         description: >
           A graphical editor for Modelica’s icon annotation. Create your icons using an
-          Inscape-inspired UI.
+          Inkscape-inspired UI.
         moreurl: 'projects/move'
         downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.1/Move-0.7.1.jar'
         githuburl: 'MoVE'
       - name: 'MoDE'
         description: >
           A graphical editor for Modelica’s diagram annotation. Create your diagrams using an
-          Inscape-inspired UI.
+          Inkscape-inspired UI.
         moreurl: 'https://github.com/THM-MoTE/MoDE'
         githuburl: 'MoDE'
         downloadurl: 'https://github.com/THM-MoTE/MoDE/releases'
