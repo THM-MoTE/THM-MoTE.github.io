@@ -7,6 +7,10 @@ code { /* overwrite foundation default-styles */
 	padding-left: 4px;
 	padding-right: 4px;
 }
+img#mote-logo {
+	width:100%;
+	margin-bottom:30px;
+}
 .intro-banner {
 	height: 300px;
 }
