@@ -47,6 +47,22 @@
     {% endfor %}
   </div> <!-- /libraries sec -->
   <hr>
+  <div class="row small-up-1 medium-up-2 large-up-3"> <!-- libraries section -->
+    <a name="libraries"></a>
+    <h2 class="text-center">{{ site.data.info.landing.paper.headline }}</h2>
+    {% for paper in  site.data.info.landing.paper. items %}
+      {%
+        include paper_presentation.html
+          title=paper.title
+          authors=paper.authors
+          booktitle=paper.booktitle
+          year=paper.year
+          address=paper.address
+          url=paper.url
+      %}
+    {% endfor %}
+  </div> <!-- /libraries sec -->
+  <hr>
   <div class="row"> <!-- about section -->
     <div class="large-12 columns">
       <a name="about"></a>

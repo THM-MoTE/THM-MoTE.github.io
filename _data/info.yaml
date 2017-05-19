@@ -40,3 +40,19 @@ landing:
       - name: 'EnhancedWatchService'
         description: A wrapper for Java's WatchService API that simplifies the WatchService.
         githuburl: 'EnhancedWatchService'
+
+  paper:
+    headline: "Scientific papers"
+    items:
+      - title: "Mo|E - A Communication Service Between Modelica Compilers and Text Editors"
+        authors: "Nicola Justus, Christopher Schölzel, Andreas Dominik and Thomas Letschert"
+        booktitle: "Proceedings of the 12th International Modelica Conference"
+        year: "2017"
+        address: Prague, Czech Republic
+        url: https://modelica.org/events/modelica2017/proceedings/html/submissions/ecp17132815_JustusScholzelDominikLetschert.pdf
+      - title: MoVE - A Standalone Modelica Vector Graphics Editor
+        authors: "Nicola Justus, Christopher Schölzel and Andreas Dominik"
+        booktitle: "Proceedings of the 12th International Modelica Conference"
+        year: "2017"
+        address: Prague, Czech Republic
+        url: https://modelica.org/events/modelica2017/proceedings/html/submissions/ecp17132809_JustusScholzelDominik.pdf
