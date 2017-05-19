@@ -59,3 +59,9 @@ img#mote-logo {
 .tool-img:fullscreen, .tool-img:-moz-full-screen, .tool-img:-webkit-fullscreen {
 	max-width: 100%;
 }
+.italic {
+	font-style:italic;
+}
+.paper-box {
+	margin-bottom: 30px;
+}
