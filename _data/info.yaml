@@ -13,6 +13,7 @@ landing:
         downloadurl: 'https://github.com/THM-MoTE/MoVE/releases/download/v0.7.1/Move-0.7.1.jar'
         githuburl: 'MoVE'
       - name: 'MoDE'
+        image: 'public/img/mode-v0.7.png'
         description: >
           A graphical editor for Modelica’s diagram annotation. Create your diagrams using an
           Inkscape-inspired UI.
